@@ -60,31 +60,31 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "/html/body/app-root/app-header/div/div/nav/div[1]/div[1]/i")
     WebElement vernacularDrop;
 
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[1]/div/div/div/button")
+    @FindBy(css = "button.btn:nth-child(2)")
     WebElement partnerUs;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[1]")
     WebElement gettingPregSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[2]/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[2]/div/div/app-swiper/swiper/div/div[1]")
     WebElement pregnancySection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[3]/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[3]/div/div/app-swiper/swiper/div/div[1]")
     WebElement babySection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[4]/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[4]/div/div/app-swiper/swiper/div/div[1]")
     WebElement toddlerSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[5]/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[5]/div/div/app-swiper/swiper/div/div[1]")
     WebElement parentingSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[6]/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[6]/div/div/app-swiper/swiper/div/div[1]")
     WebElement womenLifeSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[4]/div/div/div/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[4]/div/div/div/div/div/swiper/div/div[1]")
     WebElement expertSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[5]/div/div/div/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[5]/div/div/div/div/div/swiper/div/div[1]")
     WebElement videoSection;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[6]/div/div/div/div/div/swiper")
     WebElement tipsSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[8]/div/div/div/div/div/div")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[8]/div/div/div/div/div/div/swiper/div/div[1]")
     WebElement askMomsSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[9]/div/div/div/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[9]/div/div/div/div/div/swiper/div/div[1]")
     WebElement testimonialSection;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/footer/div[1]/div/div/div/div/swiper")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/footer/div[1]/div/div/div/div/swiper/div/div[1]")
     WebElement BDNewsSection;
 
 
@@ -94,7 +94,7 @@ public class HomePage extends TestBase {
     WebElement cardBlog;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[1]/app-video/div/div/div/div/div")
     WebElement youtubeIcon;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[5]/div/div/div/div/div/swiper/div/div[1]/div[1]")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[5]/div/div/div/div/div/swiper/div/div[1]/div[2]")
     WebElement videoBlog;
     @FindBy(xpath = "//*[@id=\"desktop-widget\"]/div[1]/button")
     WebElement joinNowHome;
@@ -116,9 +116,9 @@ public class HomePage extends TestBase {
     WebElement gettingPregCat;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/div/p")
     WebElement gettingPregDesc;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/swiper/div/div[1]/div[1]")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[1]")
     WebElement gettingPregBlog;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/swiper/div/div[2]/span[3]")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[2]/span[3]")
     WebElement gettinPredThirdDot;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/a/button")
     WebElement gettingPregSeeAll;
@@ -177,6 +177,7 @@ public class HomePage extends TestBase {
     public void TC5_all_categories_postcard_present() throws InterruptedException, IOException {
 
         waitForElement(driver,gettingPregCat,60);
+        scroll("scroll(0,2000)");
         pause1();
         Boolean isGettingCat = gettingPregCat.isDisplayed();
         Assert.assertEquals(isGettingCat.toString(),"true");
@@ -231,23 +232,23 @@ public class HomePage extends TestBase {
 
     }
     public void TC9_whatsapp_directory_page() throws InterruptedException, IOException {
+        pause1();
         scroll("scroll(0,1200)");
         waitForElement(driver,expertBlog,60);
         joinNowHome.click();
-        pause2();
+        pause1();
         Assert.assertEquals(driver.getTitle(),"Whatsapp Directory");
-        joinChennaiGroup.click();
-        pause();
-        Assert.assertEquals(driver.getTitle(),"WhatsApp");
-        back();
+        driver.navigate().back();
         pause2();
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
 
     }
-    public void TC10_video_blog_open() throws InterruptedException, IOException {
-        scroll("scroll(0,1200)");
-        waitForElement(driver,videoBlog,60);
-        videoBlog.click();
+    public void TC10_video_blog_open() throws InterruptedException,IOException{
+        System.out.println("reached");
+        pause1();
+       scroll("scroll(0,1200)");
+       waitForElement(driver,videoBlog,60);
+       videoBlog.click();
        pause2();
        Boolean isYoutube = youtubeIcon.isDisplayed();
        Assert.assertEquals(isYoutube.toString(),"true");
@@ -270,7 +271,10 @@ public class HomePage extends TestBase {
     }
     public void TC12_all_sections_present() throws InterruptedException, IOException {
 
-        driver.navigate().refresh();pause1();
+        driver.navigate().refresh();
+        pause1();
+        scroll("scroll(0,2000)");
+        pause1();
         Boolean isGettingSection = gettingPregSection.isDisplayed();
         Assert.assertEquals(isGettingSection.toString(),"true");
         Boolean isPregSection = pregnancySection.isDisplayed();

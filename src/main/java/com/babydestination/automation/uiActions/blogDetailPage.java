@@ -12,7 +12,7 @@ import org.testng.Assert;
 public class blogDetailPage extends TestBase {
     public static final Logger log = Logger.getLogger(blogDetailPage.class.getName());
 
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/swiper/div/div[1]/div[1]")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[1]/div[2]")
     WebElement blog1;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div/div[2]/button")
     WebElement continueReading;
@@ -86,7 +86,7 @@ public class blogDetailPage extends TestBase {
 //
         public void TC27() throws InterruptedException
         {
-            scroll("scroll(0,400)");
+            scroll("scroll(0,800)");
             waitForElement(driver,blog1,60);
             blog1.click();
             pause();
