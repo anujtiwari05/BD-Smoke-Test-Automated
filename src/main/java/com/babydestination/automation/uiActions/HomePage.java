@@ -199,7 +199,7 @@ public class HomePage extends TestBase {
         Assert.assertEquals(isContinue.toString(),"true");
         back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
 
     }
     public void TC7_click_seeAll() throws InterruptedException, IOException {
@@ -210,7 +210,7 @@ public class HomePage extends TestBase {
         Assert.assertEquals(isCategory.toString(),"true");
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
 
     }
     public void TC8_expert_popup_submit() throws InterruptedException, IOException {
@@ -228,7 +228,7 @@ public class HomePage extends TestBase {
         expertBlog.click();
         pause();
         back();pause1();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
 
     }
     public void TC9_whatsapp_directory_page() throws InterruptedException, IOException {
@@ -240,7 +240,7 @@ public class HomePage extends TestBase {
         Assert.assertEquals(driver.getTitle(),"Whatsapp Directory");
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
 
     }
     public void TC10_video_blog_open() throws InterruptedException,IOException{
@@ -253,7 +253,7 @@ public class HomePage extends TestBase {
        Boolean isYoutube = youtubeIcon.isDisplayed();
        Assert.assertEquals(isYoutube.toString(),"true");
        pause1();back();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
        pause2();
 
     }
@@ -265,7 +265,7 @@ public class HomePage extends TestBase {
         Boolean isCardReadNext = cardPageReadNext.isDisplayed();
         Assert.assertEquals(isCardReadNext.toString(),"true");
         pause1();back();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
         pause2();
 
     }
@@ -313,7 +313,7 @@ public class HomePage extends TestBase {
         pause1();
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
         pause1();
 
     }
@@ -322,51 +322,51 @@ public class HomePage extends TestBase {
         pause1();
         langHin.click();
         pause2();
-        Assert.assertEquals( hindiHeadingText.getText(),"बेबी डेस्टिनेशन");
+        Assert.assertEquals( hindiHeadingText.getText(),OR.getProperty("Baby_Destination"));
         pause1();
         vernacularDrop.click();
         pause1();
         langTamil.click();
         pause2();
-        Assert.assertEquals(tamilHeadingText.getText(),"பேபி டெஸ்டினேஷன்");
+        Assert.assertEquals(tamilHeadingText.getText(),OR.getProperty("Baby_Destination"));
         pause1();
         vernacularDrop.click();
         pause1();
         langBangla.click();
         pause2();
-        Assert.assertEquals(banglaHeadingText.getText(),"বেবি ডেস্টিনেশন");
+        Assert.assertEquals(banglaHeadingText.getText(),OR.getProperty("Baby_Destination"));
         pause1();
         vernacularDrop.click();
         pause1();
         langEng.click();
         pause2();
-        Assert.assertEquals( engHeadingText.getText(),"Baby Destination");
+        Assert.assertEquals( engHeadingText.getText(),OR.getProperty("Baby_Destination"));
         pause1();
 
     }
     public void TC15_Footer_social_links_redirection() throws InterruptedException, IOException {
         waitForElement(driver,fbFooter,30);
         fbFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),"https://www.facebook.com/Babydestination/");
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("Prod_FB_Page"));
         pause3();
         driver.navigate().back();
         pause2();
         waitForElement(driver,instaFooter,30);
         instaFooter.click();
         pause2();
-        Assert.assertEquals( driver.getCurrentUrl(),"https://www.instagram.com/baby_destinationofficial/");
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("Prod_Insta_Page"));
         pause1();
         driver.navigate().back();
         pause2();
         waitForElement(driver,twitterFooter,30);
         twitterFooter.click();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://twitter.com/@babydestination");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("Prod_Twitter_Page"));
         pause3();
         driver.navigate().back();
         pause2();
         waitForElement(driver,youtubeFooter,30);
         youtubeFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),"https://www.youtube.com/channel/UCItunh2YRiNNgwvGKqhVk9Q");
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("Prod_Youtube_Page"));
         pause3();
         driver.navigate().back();
         pause2();
@@ -374,26 +374,26 @@ public class HomePage extends TestBase {
     public void TC16_Footer_pages_links_redirection() throws InterruptedException, IOException {
         waitForElement(driver,aboutFooter,30);
         aboutFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),"https://www.babydestination.com/about-us");
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("about_us"));
         pause1();
         driver.navigate().back();
         waitForElement(driver,contactFooter,30);
         contactFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),"https://www.babydestination.com/contact");
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("contact"));
         pause1();
         driver.navigate().back();
         waitForElement(driver,termsFooter,30);
         termsFooter.click();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/terms-of-use");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("terms_of_use"));
         pause1();
         driver.navigate().back();
         waitForElement(driver,privacyFooter,30);
         privacyFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),"https://www.babydestination.com/privacy-policy");
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("privacy_policy"));
         pause1();
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
         pause();
     }
     public void TC17_search_page() throws InterruptedException, IOException {
@@ -401,10 +401,10 @@ public class HomePage extends TestBase {
         searchBox.sendKeys("baby care");
         searchBox.sendKeys(Keys.ENTER);
         pause();
-        Assert.assertEquals(driver.getTitle(),"baby care");
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("search_baby_care"));
         driver.navigate().back();
         pause1();
-        Assert.assertEquals(driver.getCurrentUrl(),"https://www.babydestination.com/");
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
 
     }
 

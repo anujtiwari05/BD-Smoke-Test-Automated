@@ -112,7 +112,7 @@ public class forumPage extends TestBase {
         postQues.click();
         pause2();
         loginsignup = new loginSignup(driver);
-        if(!(loginsignup.loginSignupButton.getText()=="LOGIN / SIGN-UP")) {
+        if(!(loginsignup.loginSignupButton.getText()==OR.getProperty("login_button_text"))) {
             loginsignup.login();
             pause();
             parentingQues.click();
@@ -155,7 +155,7 @@ public class forumPage extends TestBase {
         pause2();
         loginsignup = new loginSignup(driver);
 //        loginsignup.loginSignupLink();
-        if(!(loginsignup.loginSignupButton.getText()=="LOGIN / SIGN-UP")) {
+        if(!(loginsignup.loginSignupButton.getText()==OR.getProperty("login_button_text"))) {
             loginsignup.login();
             pause();
             driver.navigate().refresh();

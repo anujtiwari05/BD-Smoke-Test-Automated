@@ -114,21 +114,7 @@ waitForElement(driver,loginSignupButton,60);
        }
    }
 
-    public void signUp() throws InterruptedException {
-        dobDay.click();
-        driver.findElement(By.xpath("/html/body/div[2]/div[2]/div/div/mat-option[3]/span")).click();
-        dobmonth.click();
-        driver.findElement(By.xpath("/html/body/div[2]/div[3]/div/div/mat-option[4]/span")).click();
-        dobYear.click();
-        driver.findElement(By.xpath("/html/body/div[2]/div[4]/div/div/mat-option[5]/span")).click();
-        pause1();
-        dobEmail.sendKeys("submit1211@gmail.com");
-        pause1();
-        dobPassword.sendKeys("123456");
-        pause1();
-        dobRegister.click();
-        pause3();
-    }
+
     public void logOut() throws InterruptedException
     {
         driver.navigate().refresh();

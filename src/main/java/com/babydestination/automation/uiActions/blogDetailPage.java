@@ -160,14 +160,14 @@ public class blogDetailPage extends TestBase {
     {
         waitForElement(driver,whatsappWidgetText,60);
         String waText=whatsappWidgetText.getText();
-        Assert.assertEquals(waText,"Get your questions answered by our 45,000+ trusted moms community");
+        Assert.assertEquals(waText,OR.getProperty("WA_Widget_Text"));
 
     }
     public void TC37() throws InterruptedException
     {
         waitForElement(driver,askMomWidgetText,60);
         String askText=askMomWidgetText.getText();
-        Assert.assertEquals(askText,"More than 50,000+ Questions Answered!");
+        Assert.assertEquals(askText,OR.getProperty("Ask_Mom_Widget_Text"));
 
     }
     public void TC38() throws InterruptedException
