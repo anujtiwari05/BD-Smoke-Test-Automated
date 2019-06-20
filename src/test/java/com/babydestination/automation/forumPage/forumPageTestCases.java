@@ -29,14 +29,14 @@ public class forumPageTestCases extends TestBase {
     @Test(groups = {"Regression","smoke"},enabled = true)
     public void TC_37_Forum_Post_Question() throws InterruptedException {
 
-        forumPage.postQuestion();
+        forumPage.postQuestion(OR);
 
     }
 
     @Test(groups = {"Regression","Smoke"})
     public void TC_38_Forum_Post_Answer() throws InterruptedException {
 
-        forumPage.postAnswer();
+        forumPage.postAnswer(OR);
 
     }
     @Test(groups = {"Regression","Smoke"})

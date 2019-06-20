@@ -21,6 +21,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
@@ -74,30 +75,30 @@ public class TestBase {
 		OR.load(f);
 	}
 
+
 	public void engPropFile() throws IOException {
 		File file1 = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/config.properties");
 		Properties pr = new Properties();
 		pr.load( new FileInputStream(file1));
-
-		      if("prod_eng".equals(pr.getProperty("env"))){
+		if("English".equals(pr.getProperty("language"))){
 		File file = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/eng.properties");
 		f1 = new FileInputStream(file);
 		OR.load(f1);
 		}
-		else if("prod_hindi".equals(pr.getProperty("env"))){
+		else if("Hindi".equals(pr.getProperty("language"))){
 			File file = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/hindi.properties");
 			f1 = new FileInputStream(file);
 			InputStreamReader in_strm = new InputStreamReader(f1,"UTF-8");
 			OR.load(in_strm);
 
-		}else if("prod_tamil".equals(pr.getProperty("env"))){
+		}else if("Tamil".equals(pr.getProperty("language"))){
 			File file = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/tamil.properties");
 			f1 = new FileInputStream(file);
 			InputStreamReader in_strm = new InputStreamReader(f1,"UTF-8");
 			OR.load(in_strm);
 
 
-		}else if("prod_bangla".equals(pr.getProperty("env"))){
+		}else if("Bangla".equals(pr.getProperty("language"))){
 			File file = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/bangla.properties");
 			f1 = new FileInputStream(file);
 			InputStreamReader in_strm = new InputStreamReader(f1,"UTF-8");
@@ -120,6 +121,8 @@ public class TestBase {
 		System.out.println(OR.getProperty("browser"));
 		selectBrowser(OR.getProperty("browser"));
 		getUrl(OR.getProperty("url"));
+		engPropFile();
+
 	}
 
 	public void selectBrowser(String browser) {
@@ -375,6 +378,11 @@ public class TestBase {
 		closeBrowser();
 		Quit();
 	}
+//	@BeforeClass
+//	public void langProperties() throws InterruptedException,IOException
+//	{
+//		engPropFile();
+//	}
 
 	public void closeBrowser() {
 		//driver.quit();
@@ -407,7 +415,7 @@ public class TestBase {
 				driver = new RemoteWebDriver(new URL(Node), cap);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				// Launch website
-				loadData();
+				engPropFile();
 				getUrl(OR.getProperty("url"));
 			} else if (browser.equals("firefox")) {
 				//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver.exe");
@@ -443,7 +451,7 @@ public class TestBase {
 				driver = new RemoteWebDriver(new URL(Node), cap);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				// Launch website
-				loadData();
+				engPropFile();
 				getUrl(OR.getProperty("url"));
 			} else if (browser.equals("firefox")) {
 				System.out.println(System.getProperty("user.dir"));

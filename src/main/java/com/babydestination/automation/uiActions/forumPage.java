@@ -12,6 +12,7 @@ import com.babydestination.automation.testBase.TestBase;
 import org.testng.Assert;
 
 import java.util.ArrayList;
+import java.util.Properties;
 
 public class forumPage extends TestBase {
     public static final Logger log = Logger.getLogger(forumPage.class.getName());
@@ -98,7 +99,7 @@ public class forumPage extends TestBase {
 
     }
 
-    public void postQuestion() throws InterruptedException
+    public void postQuestion(Properties OR) throws InterruptedException
     {
         waitForElement(driver,askButton,60);
         pause1();
@@ -139,7 +140,7 @@ public class forumPage extends TestBase {
         }
     }
 
-    public void postAnswer() throws InterruptedException {
+    public void postAnswer(Properties OR) throws InterruptedException {
 
         askMomHeader.click();
         waitForElement(driver,ansButton,120);

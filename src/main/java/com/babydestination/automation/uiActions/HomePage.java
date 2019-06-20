@@ -15,6 +15,7 @@ import java.util.Properties;
 
 public class HomePage extends TestBase {
 
+
     public static final Logger log = Logger.getLogger(HomePage.class.getName());
     @FindBy(xpath = "//*[@id=\"keyword\"]")
     WebElement searchBox;
@@ -191,7 +192,7 @@ public class HomePage extends TestBase {
         Assert.assertEquals(isGettingSee.toString(),"true");
 
     }
-    public void TC6_click_blog() throws InterruptedException, IOException {
+    public void TC6_click_blog(Properties OR) throws InterruptedException, IOException {
         waitForElement(driver,gettingPregBlog,60);
         gettingPregBlog.click();
         pause2();
@@ -199,10 +200,10 @@ public class HomePage extends TestBase {
         Assert.assertEquals(isContinue.toString(),"true");
         back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
 
     }
-    public void TC7_click_seeAll() throws InterruptedException, IOException {
+    public void TC7_click_seeAll(Properties OR) throws InterruptedException, IOException {
         waitForElement(driver,gettingPregSeeAll,60);
         gettingPregSeeAll.click();
         pause2();
@@ -210,10 +211,10 @@ public class HomePage extends TestBase {
         Assert.assertEquals(isCategory.toString(),"true");
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
 
     }
-    public void TC8_expert_popup_submit() throws InterruptedException, IOException {
+    public void TC8_expert_popup_submit(Properties OR) throws InterruptedException, IOException {
         scroll("scroll(0,1200)");
         waitForElement(driver,expertBlog,60);
         expertBlog.click();
@@ -228,10 +229,10 @@ public class HomePage extends TestBase {
         expertBlog.click();
         pause();
         back();pause1();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
 
     }
-    public void TC9_whatsapp_directory_page() throws InterruptedException, IOException {
+    public void TC9_whatsapp_directory_page(Properties OR) throws InterruptedException, IOException {
         pause1();
         scroll("scroll(0,1200)");
         waitForElement(driver,expertBlog,60);
@@ -240,10 +241,10 @@ public class HomePage extends TestBase {
         Assert.assertEquals(driver.getTitle(),"Whatsapp Directory");
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
 
     }
-    public void TC10_video_blog_open() throws InterruptedException,IOException{
+    public void TC10_video_blog_open(Properties OR) throws InterruptedException,IOException{
         System.out.println("reached");
         pause1();
        scroll("scroll(0,1200)");
@@ -253,11 +254,11 @@ public class HomePage extends TestBase {
        Boolean isYoutube = youtubeIcon.isDisplayed();
        Assert.assertEquals(isYoutube.toString(),"true");
        pause1();back();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
        pause2();
 
     }
-    public void TC11_card_blog_open() throws InterruptedException, IOException {
+    public void TC11_card_blog_open(Properties OR) throws InterruptedException, IOException {
         scroll("scroll(0,1200)");
         waitForElement(driver,cardBlog,60);
         cardBlog.click();
@@ -265,7 +266,7 @@ public class HomePage extends TestBase {
         Boolean isCardReadNext = cardPageReadNext.isDisplayed();
         Assert.assertEquals(isCardReadNext.toString(),"true");
         pause1();back();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
         pause2();
 
     }
@@ -302,22 +303,22 @@ public class HomePage extends TestBase {
         pause1();
 
     }
-    public void TC13_partner_us_page() throws InterruptedException, IOException {
+    public void TC13_partner_us_page(Properties OR) throws InterruptedException, IOException {
         waitForElement(driver,partnerUs,30);
         partnerUs.click();
         scroll("scroll(0,1000)");
         pause2();
         scroll("scroll(1000,2250)");
         pause2();
-        Assert.assertEquals( driver.getTitle(),"partner-with-us");
+        Assert.assertEquals( driver.getTitle(),OR.getProperty("partner_with_us"));
         pause1();
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
         pause1();
 
     }
-    public void TC14_language_dropdown() throws InterruptedException, IOException {
+    public void TC14_language_dropdown(Properties OR) throws InterruptedException, IOException {
         vernacularDrop.click();
         pause1();
         langHin.click();
@@ -344,7 +345,7 @@ public class HomePage extends TestBase {
         pause1();
 
     }
-    public void TC15_Footer_social_links_redirection() throws InterruptedException, IOException {
+    public void TC15_Footer_social_links_redirection(Properties OR) throws InterruptedException, IOException {
         waitForElement(driver,fbFooter,30);
         fbFooter.click();
         Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("Prod_FB_Page"));
@@ -371,7 +372,7 @@ public class HomePage extends TestBase {
         driver.navigate().back();
         pause2();
     }
-    public void TC16_Footer_pages_links_redirection() throws InterruptedException, IOException {
+    public void TC16_Footer_pages_links_redirection(Properties OR) throws InterruptedException, IOException {
         waitForElement(driver,aboutFooter,30);
         aboutFooter.click();
         Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("about_us"));
@@ -393,10 +394,10 @@ public class HomePage extends TestBase {
         pause1();
         driver.navigate().back();
         pause2();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
         pause();
     }
-    public void TC17_search_page() throws InterruptedException, IOException {
+    public void TC17_search_page(Properties OR) throws InterruptedException, IOException {
         waitForElement(driver,searchBox,60);
         searchBox.sendKeys("baby care");
         searchBox.sendKeys(Keys.ENTER);
@@ -404,7 +405,7 @@ public class HomePage extends TestBase {
         Assert.assertEquals(driver.getTitle(),OR.getProperty("search_baby_care"));
         driver.navigate().back();
         pause1();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("homepage_url"));
+        Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
 
     }
 

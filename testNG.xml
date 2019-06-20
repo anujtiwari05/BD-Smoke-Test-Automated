@@ -4,17 +4,12 @@
 <suite name="Default Suite">
 
     <test name="HomePageTest">
-        <groups>
-            <run>
-                <include name = "Smoke"></include>
-                <include name = "Regression"></include>
-            </run>
-        </groups>
+
         <classes>
             <class name="com.babydestination.automation.homePage.homePageTestCases"></class>
-            <class name="com.babydestination.automation.uiActions.HomePage"></class>
+            <class name="com.babydestination.automation.forumPage.forumPageTestCases"></class>
             <class name="com.babydestination.automation.blogDetailPage.blogPageTestCases"></class>
-            <class name="com.babydestination.automation.uiActions.blogDetailPage"></class>
+            <class name="com.babydestination.automation.loginSignup.loginPageTestCases"></class>
 
         </classes>
     </test>

@@ -9,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.babydestination.automation.testBase.TestBase;
 import org.testng.Assert;
 
+import java.util.Properties;
+
 public class blogDetailPage extends TestBase {
     public static final Logger log = Logger.getLogger(blogDetailPage.class.getName());
 
@@ -18,7 +20,7 @@ public class blogDetailPage extends TestBase {
     WebElement continueReading;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[2]/li")
     WebElement related1;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[4]/li")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[3]/li")
     WebElement related2;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[1]/app-breadcrumb/ul/li[3]/a/span/app-category-list/span")
     WebElement subCatBreadcrumb;
@@ -91,7 +93,6 @@ public class blogDetailPage extends TestBase {
             blog1.click();
             pause();
         }
-
         public void TC28() throws InterruptedException
         {
             waitForElement(driver,continueReading,60);
@@ -108,12 +109,12 @@ public class blogDetailPage extends TestBase {
         scroll("scroll(800,2800)");
         waitForElement(driver,related2,60);
         related2.click();
-        pause2();
+        pause1();
     }
         public void TC30() throws InterruptedException
         {
             driver.navigate().refresh();
-            pause1();
+            pause3();
             Assert.assertEquals(continueReading.isDisplayed(),true);
             pause1();
 
@@ -156,18 +157,19 @@ public class blogDetailPage extends TestBase {
         driver.navigate().back();
         pause3();
     }
-    public void TC36() throws InterruptedException
+    public void TC36(Properties OR) throws InterruptedException
     {
         waitForElement(driver,whatsappWidgetText,60);
         String waText=whatsappWidgetText.getText();
         Assert.assertEquals(waText,OR.getProperty("WA_Widget_Text"));
+        pause1();
 
     }
-    public void TC37() throws InterruptedException
+    public void TC37(Properties OR) throws InterruptedException
     {
         waitForElement(driver,askMomWidgetText,60);
         String askText=askMomWidgetText.getText();
-        Assert.assertEquals(askText,OR.getProperty("Ask_Mom_Widget_Text"));
+        Assert.assertEquals(askText,OR.getProperty("Ask_Mom_Widget_Text").toString());
 
     }
     public void TC38() throws InterruptedException
