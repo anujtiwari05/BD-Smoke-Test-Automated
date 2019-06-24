@@ -17,8 +17,8 @@ public class forumPageTestCases extends TestBase {
         init();
     }
 
-    @Test(groups = {"Regression","Smoke"})
-    public void TC_36_0_Forum_Homepage() throws InterruptedException {
+    @Test(groups = {"Regression","Smoke"},priority = 1)
+    public void TC_36_Forum_Homepage() throws InterruptedException {
         forumPage = new forumPage(driver);
         forumPage.forumsHomepage();
 
@@ -26,48 +26,48 @@ public class forumPageTestCases extends TestBase {
 
 
 
-    @Test(groups = {"Regression","smoke"},enabled = true)
+    @Test(groups = {"Regression","smoke"},enabled = true,priority = 2)
     public void TC_37_Forum_Post_Question() throws InterruptedException {
-
+        forumPage = new forumPage(driver);
         forumPage.postQuestion(OR);
 
     }
 
-    @Test(groups = {"Regression","Smoke"})
+    @Test(groups = {"Regression","Smoke"},priority = 3)
     public void TC_38_Forum_Post_Answer() throws InterruptedException {
-
+        forumPage = new forumPage(driver);
         forumPage.postAnswer(OR);
 
     }
-    @Test(groups = {"Regression","Smoke"})
+    @Test(groups = {"Regression","Smoke"},priority = 4)
     public void TC_36_1_View_Question() throws InterruptedException {
-
+        forumPage = new forumPage(driver);
         forumPage.viewQuestion();
 
     }
-    @Test(groups = {"Regression","Smoke"})
+    @Test(groups = {"Regression","Smoke"},priority = 5)
     public void TC_39_Red_Ans_Button() throws InterruptedException {
-
+        forumPage = new forumPage(driver);
         forumPage.redAnsButton();
 
     }
 
-    @Test(groups = {"Regression","Smoke"})
+    @Test(groups = {"Regression","Smoke"},priority = 6)
     public void TC_40_yellow_LS_Tag() throws InterruptedException {
-
+        forumPage = new forumPage(driver);
         forumPage.yellowLSTagClick();
 
     }
-    @Test(groups = {"Regression","Smoke"})
+    @Test(groups = {"Regression","Smoke"},priority = 7)
     public void TC_41_Cancel_Button_Text() throws InterruptedException {
-
+        forumPage = new forumPage(driver);
         forumPage.cancelButtonTest();
-        pause3();
+
 
     }
-    @Test(groups = {"Regression","Smoke"})
+    @Test(groups = {"Regression","Smoke"},priority = 8)
     public void TC_42_Infinite_scroll_forumHomepage() throws InterruptedException {
-
+        forumPage = new forumPage(driver);
         forumPage.infiniteScroll();
         pause3();
 

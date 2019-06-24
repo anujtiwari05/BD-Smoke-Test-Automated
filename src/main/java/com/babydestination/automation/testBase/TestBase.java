@@ -1,6 +1,7 @@
 package com.babydestination.automation.testBase;
 
 import com.babydestination.automation.customListner.WebEventListener;
+import com.babydestination.automation.notification.emailNotification;
 import com.babydestination.automation.excelReader.Excel_Reader;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -24,10 +25,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+
+import javax.mail.MessagingException;
+import java.io.*;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -64,7 +64,7 @@ public class TestBase {
 
 	static {
 		Calendar calendar = Calendar.getInstance();
-		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh");
 		extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/report/test" + formater.format(calendar.getTime()) + ".html", false);
 //		extent = new ExtentReports( "https://hooks.slack.com/services/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"+formater.format(calendar.getTime()) + ".html", false);
 	}
@@ -83,10 +83,11 @@ public class TestBase {
 		if("English".equals(pr.getProperty("language"))){
 		File file = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/eng.properties");
 		f1 = new FileInputStream(file);
-		OR.load(f1);
+		InputStreamReader in_strm = new InputStreamReader(f1,"UTF-8");
+		OR.load(in_strm);
 		}
 		else if("Hindi".equals(pr.getProperty("language"))){
-			File file = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/hindi.properties");
+			File file = new File(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/config/hindi.properties", "UTF_8");
 			f1 = new FileInputStream(file);
 			InputStreamReader in_strm = new InputStreamReader(f1,"UTF-8");
 			OR.load(in_strm);
@@ -125,7 +126,7 @@ public class TestBase {
 
 	}
 
-	public void selectBrowser(String browser) {
+	public void selectBrowser(String browser) throws IOException {
 		System.out.println(System.getProperty("os.name"));
 		if (System.getProperty("os.name").contains("Window")) {
 			if (browser.equals("chrome")) {
@@ -168,6 +169,7 @@ public class TestBase {
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriverlinux");
 				driver = new ChromeDriver();
 				driver.manage().deleteAllCookies();
+//				driver.manage().deleteAllCookies();
 //				 driver = new EventFiringWebDriver(dr);
 //				 eventListener = new WebEventListener();
 //				 driver.register(eventListener);
@@ -374,9 +376,12 @@ public class TestBase {
 	}
 
 	@AfterClass(alwaysRun = false)
-	public void endTest() {
+	public void endTest() throws MessagingException {
 		closeBrowser();
 		Quit();
+		emailNotification en= new emailNotification();
+		en.emailSend();
+
 	}
 //	@BeforeClass
 //	public void langProperties() throws InterruptedException,IOException

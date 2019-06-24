@@ -61,7 +61,7 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "/html/body/app-root/app-header/div/div/nav/div[1]/div[1]/i")
     WebElement vernacularDrop;
 
-    @FindBy(css = "button.btn:nth-child(2)")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[1]/div/div/div/button")
     WebElement partnerUs;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[1]")
     WebElement gettingPregSection;
@@ -304,6 +304,8 @@ public class HomePage extends TestBase {
 
     }
     public void TC13_partner_us_page(Properties OR) throws InterruptedException, IOException {
+        driver.navigate().refresh();
+        pause2();
         waitForElement(driver,partnerUs,30);
         partnerUs.click();
         scroll("scroll(0,1000)");
@@ -319,29 +321,31 @@ public class HomePage extends TestBase {
 
     }
     public void TC14_language_dropdown(Properties OR) throws InterruptedException, IOException {
+
         vernacularDrop.click();
         pause1();
         langHin.click();
         pause2();
-        Assert.assertEquals( hindiHeadingText.getText(),OR.getProperty("Baby_Destination"));
+
+        Assert.assertEquals( hindiHeadingText.getText(),OR.getProperty("Baby_Destination_HI"));
         pause1();
         vernacularDrop.click();
         pause1();
         langTamil.click();
         pause2();
-        Assert.assertEquals(tamilHeadingText.getText(),OR.getProperty("Baby_Destination"));
+        Assert.assertEquals(tamilHeadingText.getText(),OR.getProperty("Baby_Destination_TA"));
         pause1();
         vernacularDrop.click();
         pause1();
         langBangla.click();
         pause2();
-        Assert.assertEquals(banglaHeadingText.getText(),OR.getProperty("Baby_Destination"));
+        Assert.assertEquals(banglaHeadingText.getText(),OR.getProperty("Baby_Destination_BE"));
         pause1();
         vernacularDrop.click();
         pause1();
         langEng.click();
         pause2();
-        Assert.assertEquals( engHeadingText.getText(),OR.getProperty("Baby_Destination"));
+        Assert.assertEquals( engHeadingText.getText(),OR.getProperty("Baby_Destination_EN"));
         pause1();
 
     }
@@ -373,24 +377,25 @@ public class HomePage extends TestBase {
         pause2();
     }
     public void TC16_Footer_pages_links_redirection(Properties OR) throws InterruptedException, IOException {
+        loadData();
         waitForElement(driver,aboutFooter,30);
         aboutFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("about_us"));
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("url")+"/about-us");
         pause1();
         driver.navigate().back();
         waitForElement(driver,contactFooter,30);
         contactFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("contact"));
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("url")+"/contact");
         pause1();
         driver.navigate().back();
         waitForElement(driver,termsFooter,30);
         termsFooter.click();
-        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("terms_of_use"));
+        Assert.assertEquals(driver.getCurrentUrl(),OR.getProperty("url")+"/terms-of-use");
         pause1();
         driver.navigate().back();
         waitForElement(driver,privacyFooter,30);
         privacyFooter.click();
-        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("privacy_policy"));
+        Assert.assertEquals( driver.getCurrentUrl(),OR.getProperty("url")+"/privacy-policy");
         pause1();
         driver.navigate().back();
         pause2();
@@ -399,7 +404,7 @@ public class HomePage extends TestBase {
     }
     public void TC17_search_page(Properties OR) throws InterruptedException, IOException {
         waitForElement(driver,searchBox,60);
-        searchBox.sendKeys("baby care");
+        searchBox.sendKeys(OR.getProperty("search_baby_care"));
         searchBox.sendKeys(Keys.ENTER);
         pause();
         Assert.assertEquals(driver.getTitle(),OR.getProperty("search_baby_care"));

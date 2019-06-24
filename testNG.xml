@@ -7,15 +7,29 @@
 
         <classes>
             <class name="com.babydestination.automation.homePage.homePageTestCases"></class>
-            <class name="com.babydestination.automation.forumPage.forumPageTestCases"></class>
-            <class name="com.babydestination.automation.blogDetailPage.blogPageTestCases"></class>
-            <class name="com.babydestination.automation.loginSignup.loginPageTestCases"></class>
+        </classes>
+    </test>
+    <test name="ForumPageTest">
 
+        <classes>
+            <class name="com.babydestination.automation.forumPage.forumPageTestCases"></class>
+        </classes>
+    </test>
+    <test name="blogDetailPage">
+
+        <classes>
+            <class name="com.babydestination.automation.blogDetailPage.blogPageTestCases"></class>
+        </classes>
+    </test>
+    <test name="loginSignupTest">
+
+        <classes>
+            <class name="com.babydestination.automation.loginSignup.loginPageTestCases"></class>
         </classes>
     </test>
     <!--<test name="BlogDetailPage">-->
 
-        <!--<groups>-->
+    <!--<groups>-->
             <!--<run>-->
                 <!--<include name = "Smoke"></include>-->
             <!--</run>-->
@@ -39,18 +53,7 @@
 
         <!--</classes>-->
     <!--</test>-->
-    <test name="ForumPage">
 
-        <groups>
-            <run>
-                <include name = "Smoke"></include>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.babydestination.automation.forumPage.forumPageTestCases"></class>
-            <class name="com.babydestination.automation.uiActions.forumPage"></class>
-        </classes>
-    </test>
     <listeners>
         <!--<listener class-name="com.babydestination.automation.customListner.Listener"></listener>-->
         <!--<listener class-name="com.babydestination.automation.customListner.RetryListener"></listener>-->

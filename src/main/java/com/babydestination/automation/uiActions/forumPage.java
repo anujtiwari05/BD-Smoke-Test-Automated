@@ -62,9 +62,9 @@ public class forumPage extends TestBase {
     WebElement viewQuesText;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-forum-view-question/div/div/div/div[2]/app-trending-questions/div")
     WebElement similarQuestions;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-forum/div[1]/div/div[1]/div[2]/div[1]/app-forum-question-card/div/div/div[1]/a")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-forum/div[1]/div/div[1]/div[2]/div[1]/app-forum-question-card/div/div/div[1]/a/app-breadcrumb/ul/li/a")
     WebElement yellowLSTag;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-category2/div/div/div/div[1]/div/h1")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-category2/div/div/div/div[1]/div/div/app-breadcrumb/ul/li[2]/a/span/app-category-list/span")
     WebElement redirectAfterLSTag;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-forum/div[1]/div/div[2]/div/div/div[1]")
     WebElement WAWidgetText;
@@ -106,34 +106,34 @@ public class forumPage extends TestBase {
         askButton.click();
         quesArea.clear();
         pause1();
-        quesArea.sendKeys("testing question on forum for auto");
+        quesArea.sendKeys("testing question on forum automated");
         pause1();
 //        selectCat.click();
 //        pause2();
         postQues.click();
-        pause2();
+        pause1();
         loginsignup = new loginSignup(driver);
         if(!(loginsignup.loginSignupButton.getText()==OR.getProperty("login_button_text"))) {
             loginsignup.login();
-            pause();
+            pause3();
             parentingQues.click();
             submitCatPopup.click();
             pause2();
             driver.navigate().refresh();
             pause3();
-            forumFirstQues.getText().contains("testing question on forum for auto");
+            forumFirstQues.getText().contains("testing question on forum automated");
             pause1();
             loginsignup.logOut();
             pause();
         }
         else {
-            pause();
+            pause3();
             parentingQues.click();
             submitCatPopup.click();
             pause2();
             driver.navigate().refresh();
             pause3();
-            forumFirstQues.getText().contains("testing question on forum for auto");
+            forumFirstQues.getText().contains("testing question on forum else automated");
             pause1();
             loginsignup.logOut();
             pause();
@@ -151,7 +151,7 @@ public class forumPage extends TestBase {
         ansButton.click();
         pause1();
         ansArea.clear();
-        ansArea.sendKeys("Ohhhhh!!!! Really thats great...cool ever!!");
+        ansArea.sendKeys("Ohhhhh!!!! Really thats great...cool evergreen");
         postAns.click();
         pause2();
         loginsignup = new loginSignup(driver);
@@ -180,6 +180,8 @@ public class forumPage extends TestBase {
     }
     public void viewQuestion() throws  InterruptedException
     {
+        askMomHeader.click();
+        pause2();
         waitForElement(driver,viewQues,120);
         viewQues.click();
         pause();
@@ -193,13 +195,11 @@ public class forumPage extends TestBase {
         Assert.assertEquals(isPresentAns.toString(),"true");
         Boolean relatedQues = similarQuestions.isDisplayed();
         Assert.assertEquals(relatedQues.toString(),"true");
-        driver.navigate().back();
         pause2();
     }
     public void redAnsButton() throws InterruptedException
     {
         waitForElement(driver,redAnsButtonOnViewQuestionPage,120);
-        pause2();
         redAnsButtonOnViewQuestionPage.click();
         pause1();
         Boolean isAnsAreaPresent = ansArea.isDisplayed();
@@ -216,10 +216,8 @@ public class forumPage extends TestBase {
         pause2();
         yellowLSTag.click();
         pause3();
-        Assert.assertEquals(redirectAfterLSTag.getText(),yellowLSTag.getText());
-        pause1();
         driver.navigate().back();
-        pause2();
+        pause3();
         Assert.assertEquals(driver.getTitle(),"Forum");
 
     }

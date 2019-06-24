@@ -20,7 +20,7 @@ public class blogDetailPage extends TestBase {
     WebElement continueReading;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[2]/li")
     WebElement related1;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[3]/li")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[5]/li")
     WebElement related2;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[1]/app-breadcrumb/ul/li[3]/a/span/app-category-list/span")
     WebElement subCatBreadcrumb;
