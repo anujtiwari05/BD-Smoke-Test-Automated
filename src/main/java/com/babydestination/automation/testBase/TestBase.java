@@ -20,10 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 
 
 import javax.mail.MessagingException;
@@ -66,7 +63,7 @@ public class TestBase {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh");
 		extent = new ExtentReports(System.getProperty("user.dir") + "/src/main/java/com/babydestination/automation/report/test" + formater.format(calendar.getTime()) + ".html", false);
-//		extent = new ExtentReports( "https://hooks.slack.com/services/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"+formater.format(calendar.getTime()) + ".html", false);
+//		extent = new ExtentReports( "https://hooks.slack.com/services/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"+formater.format(calendar.getTime()) + ".html", false);
 	}
 
 	public void loadData() throws IOException {
@@ -379,6 +376,11 @@ public class TestBase {
 	public void endTest() throws MessagingException {
 		closeBrowser();
 		Quit();
+
+	}
+	@AfterSuite(alwaysRun = true)
+	public void endTest_After_Suite() throws MessagingException, InterruptedException {
+		pause();
 		emailNotification en= new emailNotification();
 		en.emailSend();
 

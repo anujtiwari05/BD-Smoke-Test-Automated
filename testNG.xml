@@ -3,19 +3,13 @@
 
 <suite name="Default Suite">
 
-    <test name="HomePageTest">
+    <test name="homePageTest">
 
         <classes>
             <class name="com.babydestination.automation.homePage.homePageTestCases"></class>
         </classes>
     </test>
-    <test name="ForumPageTest">
-
-        <classes>
-            <class name="com.babydestination.automation.forumPage.forumPageTestCases"></class>
-        </classes>
-    </test>
-    <test name="blogDetailPage">
+    <test name="blogDetailTest">
 
         <classes>
             <class name="com.babydestination.automation.blogDetailPage.blogPageTestCases"></class>
@@ -25,6 +19,12 @@
 
         <classes>
             <class name="com.babydestination.automation.loginSignup.loginPageTestCases"></class>
+        </classes>
+    </test>
+    <test name="forumPageTest">
+
+        <classes>
+            <class name="com.babydestination.automation.forumPage.forumPageTestCases"></class>
         </classes>
     </test>
     <!--<test name="BlogDetailPage">-->

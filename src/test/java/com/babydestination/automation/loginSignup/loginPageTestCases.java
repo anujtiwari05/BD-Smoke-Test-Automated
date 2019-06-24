@@ -17,20 +17,20 @@ public class loginPageTestCases extends TestBase {
 
 
     @Test(enabled = true,priority = 1)
-    public void TC_33_Header_Login_Button() throws InterruptedException {
+    public void TC_35_Header_Login_Button() throws InterruptedException {
         loginSignup = new loginSignup(driver);
         loginSignup.loginSignupHeader();
 //        loginSignup.loginSignupLink();
 //        loginSignup.signUp();
     }
     @Test(enabled = true,priority = 2)
-    public void TC_34_Login() throws InterruptedException {
+    public void TC_36_Login() throws InterruptedException {
         loginSignup.login();
 
     }
 
     @Test(enabled = true,priority = 3)
-    public void TC_35_Logout() throws InterruptedException {
+    public void TC_37_Logout() throws InterruptedException {
 
         loginSignup.logOut();
 

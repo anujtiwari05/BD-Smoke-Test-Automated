@@ -308,6 +308,7 @@ public class HomePage extends TestBase {
         pause2();
         waitForElement(driver,partnerUs,30);
         partnerUs.click();
+        pause2();
         scroll("scroll(0,1000)");
         pause2();
         scroll("scroll(1000,2250)");
