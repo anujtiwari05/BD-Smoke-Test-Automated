@@ -368,6 +368,7 @@ public class TestBase {
 
 	@BeforeMethod()
 	public void beforeMethod(Method result) {
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		test = extent.startTest(result.getName());
 		test.log(LogStatus.INFO, result.getName() + " test Started");
 	}
@@ -378,13 +379,13 @@ public class TestBase {
 		Quit();
 
 	}
-	@AfterSuite(alwaysRun = true)
-	public void endTest_After_Suite() throws MessagingException, InterruptedException {
-		pause();
-		emailNotification en= new emailNotification();
-		en.emailSend();
-
-	}
+//	@AfterSuite(alwaysRun = true)
+//	public void endTest_After_Suite() throws MessagingException, InterruptedException {
+//		pause();
+//		emailNotification en= new emailNotification();
+//		en.emailSend();
+//
+//	}
 //	@BeforeClass
 //	public void langProperties() throws InterruptedException,IOException
 //	{

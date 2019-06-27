@@ -8,18 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e09a73bb-4998-455e-9aea-1b005688d864" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailNotification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/babydestination/automation/testBase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babydestination/automation/testBase/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/babydestination/automation/blogDetailPage/blogPageTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/babydestination/automation/blogDetailPage/blogPageTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/babydestination/automation/forumPage/forumPageTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/babydestination/automation/forumPage/forumPageTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/babydestination/automation/loginSignup/loginPageTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/babydestination/automation/loginSignup/loginPageTestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/babydestination/automation/testBase/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/babydestination/automation/testBase/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/babydestination/automation/uiActions/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/babydestination/automation/uiActions/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/blogDetailPage/blogPageTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/blogDetailPage/blogPageTestCases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/forumPage/forumPageTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/forumPage/forumPageTestCases.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/homePage/homePageTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/homePage/homePageTestCases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/loginSignup/loginPageTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/babydestination/automation/loginSignup/loginPageTestCases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +41,71 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
+  <component name="FavoritesManager">
+    <favorites_list name="testNGRun">
+      <favorite_root url="file://$PROJECT_DIR$/testNG.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/categoryPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/blogDetailPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailNotification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/testBase/TestBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="386" column="2" selection-start-line="386" selection-start-column="2" selection-end-line="386" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -125,11 +181,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/babydestination/automation/loginSignup/loginPageTestCases.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/babydestination/automation/forumPage/forumPageTestCases.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailNotification.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/babydestination/automation/testBase/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/babydestination/automation/homePage/homePageTestCases.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailNotification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/babydestination/automation/testBase/TestBase.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -164,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,17 +233,60 @@
               <item name="BDSmokeTestAutomated" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BDSmokeTestAutomated" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDSmokeTestAutomated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BDSmokeTestAutomated" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDSmokeTestAutomated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BDSmokeTestAutomated" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDSmokeTestAutomated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BDSmokeTestAutomated" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDSmokeTestAutomated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BDSmokeTestAutomated" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDSmokeTestAutomated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BDSmokeTestAutomated" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BDSmokeTestAutomated" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="automation" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553070951397" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -212,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.homePageTestCases">
+  <component name="RunManager" selected="TestNG./home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testng.xml">
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.babydestination.automation.homePage.homePageTestCases" />
@@ -224,6 +323,16 @@
     <configuration name="/home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BDSmokeTestAutomated" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BDSmokeTestAutomated" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -282,38 +391,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="loginPageTestCases" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BDSmokeTestAutomated" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.babydestination.automation.loginSignup.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.babydestination.automation.loginSignup" />
-      <option name="MAIN_CLASS_NAME" value="com.babydestination.automation.loginSignup.loginPageTestCases" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="TestNG./home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testNG.xml" />
       <item itemvalue="TestNG.blogPageTestCases" />
       <item itemvalue="TestNG.forumPageTestCases" />
       <item itemvalue="TestNG.homePageTestCases" />
-      <item itemvalue="TestNG.loginPageTestCases" />
-      <item itemvalue="TestNG./home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testNG.xml" />
+      <item itemvalue="TestNG./home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testng.xml" />
         <item itemvalue="TestNG.homePageTestCases" />
         <item itemvalue="TestNG./home/anuj/Desktop/eclipse-workspace/BDSmokeTestAutomated/testNG.xml" />
         <item itemvalue="TestNG.forumPageTestCases" />
         <item itemvalue="TestNG.blogPageTestCases" />
-        <item itemvalue="TestNG.loginPageTestCases" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561365642931</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="final commit beofre category page added">
+      <created>1561377419256</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561377419256</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -403,23 +502,23 @@
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976852" visible="true" weight="0.21439394" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.22878788" />
       <window_info id="Structure" order="1" sideWeight="0.5023148" side_tool="true" weight="0.22727273" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.50318474" side_tool="true" weight="0.21439394" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.88863635" weight="0.36807817" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8878788" weight="0.36807817" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49848485" weight="0.495114" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49621212" weight="0.3198052" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.1780303" side_tool="true" visible="true" weight="0.23289903" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.8219697" visible="true" weight="0.23289903" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.18181819" side_tool="true" visible="true" weight="0.23127036" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.8181818" visible="true" weight="0.23127036" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49848485" weight="0.30456027" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
@@ -478,7 +577,8 @@
     <MESSAGE value="language support for bangla, tamil and Hindi added" />
     <MESSAGE value="fixed issues regarding properties files" />
     <MESSAGE value="changes done to resolve some dependencies of config file" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes done to resolve some dependencies of config file" />
+    <MESSAGE value="final commit beofre category page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="final commit beofre category page added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -677,16 +777,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/babydestination/automation/notification/emailHelper.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/babydestination/automation/notification/emailNotification.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/categoryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-317">
-          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/config/tamil.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
@@ -706,16 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/blogDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1065">
-          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,13 +820,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -784,28 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/testBase/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="384" column="4" lean-forward="true" selection-start-line="383" selection-start-column="4" selection-end-line="384" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailNotification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1300#1518#0" expanded="true" />
-            <element signature="e#1517#1518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -823,6 +874,53 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/categoryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="66" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/uiActions/blogDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="22" column="93" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/notification/emailNotification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/babydestination/automation/testBase/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="386" column="2" selection-start-line="386" selection-start-column="2" selection-end-line="386" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
