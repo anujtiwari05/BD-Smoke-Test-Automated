@@ -27,6 +27,20 @@
             <class name="com.babydestination.automation.forumPage.forumPageTestCases"></class>
         </classes>
     </test>
+    <test name="categoryPage Test">
+
+        <classes>
+            <class name="com.babydestination.automation.categoryPage.categoryPageTestCases"></class>
+        </classes>
+    </test>
+
+
+</suite>
+
+
+
+
+
     <!--<test name="BlogDetailPage">-->
 
     <!--<groups>-->
@@ -54,13 +68,13 @@
         <!--</classes>-->
     <!--</test>-->
 
-    <listeners>
+<!--    <listeners>-->
         <!--<listener class-name="com.babydestination.automation.customListner.Listener"></listener>-->
         <!--<listener class-name="com.babydestination.automation.customListner.RetryListener"></listener>-->
         <!--<listener class-name="com.babydestination.automation.customListner.Retry"></listener>-->
         <!--<listener class-name="com.babydestination.automation.customListner.WebEventListener"></listener>-->
         <!--<listener class-name="com.babydestination.automation.testBase.TestBase"></listener>-->
-    </listeners>
+<!--    </listeners>-->
 
 
     <!--<test name="BlogDetailPageTest">-->
@@ -95,4 +109,3 @@
     <!--</test>-->
 
 
-</suite>

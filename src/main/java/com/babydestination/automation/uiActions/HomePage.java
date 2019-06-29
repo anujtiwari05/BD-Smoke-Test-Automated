@@ -61,7 +61,7 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "/html/body/app-root/app-header/div/div/nav/div[1]/div[1]/i")
     WebElement vernacularDrop;
 
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[1]/div/div/div/button")
+    @FindBy(css="html > body > app-root > div > app-home2 > div > div > div > div > div > button")
     WebElement partnerUs;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[1]")
     WebElement gettingPregSection;
@@ -228,7 +228,7 @@ public class HomePage extends TestBase {
         pause3();
         expertBlog.click();
         pause();
-        back();pause1();
+        back();pause3();
         Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
 
     }
@@ -254,6 +254,7 @@ public class HomePage extends TestBase {
        Boolean isYoutube = youtubeIcon.isDisplayed();
        Assert.assertEquals(isYoutube.toString(),"true");
        pause1();back();
+       pause3();
         Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
        pause2();
 
@@ -265,16 +266,14 @@ public class HomePage extends TestBase {
         pause2();
         Boolean isCardReadNext = cardPageReadNext.isDisplayed();
         Assert.assertEquals(isCardReadNext.toString(),"true");
-        pause1();back();
+        pause1();back();pause3();
         Assert.assertEquals(driver.getTitle(),OR.getProperty("homepage_title"));
-        pause2();
+        pause1();
 
     }
     public void TC12_all_sections_present() throws InterruptedException, IOException {
 
         driver.navigate().refresh();
-        pause1();
-        scroll("scroll(0,2000)");
         pause1();
         Boolean isGettingSection = gettingPregSection.isDisplayed();
         Assert.assertEquals(isGettingSection.toString(),"true");
@@ -345,9 +344,9 @@ public class HomePage extends TestBase {
         vernacularDrop.click();
         pause1();
         langEng.click();
-        pause2();
+        pause3();
         Assert.assertEquals( engHeadingText.getText(),OR.getProperty("Baby_Destination_EN"));
-        pause1();
+        pause2();
 
     }
     public void TC15_Footer_social_links_redirection(Properties OR) throws InterruptedException, IOException {

@@ -118,9 +118,9 @@ waitForElement(driver,loginSignupButton,60);
     public void logOut() throws InterruptedException
     {
         driver.navigate().refresh();
-        pause2();
+        pause3();
         waitForElement(driver,logoutIcon,60);
-        logoutIcon.click();
+        logoutIcon.click();pause2();
         waitForElement(driver,logoutButton,60);
         logoutButton.click();
     }

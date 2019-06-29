@@ -347,12 +347,16 @@ public class TestBase {
 	}
 
 	public void getresult(ITestResult result) {
+		int passCounter=0;
+		int failCounter=0;
 		if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(LogStatus.PASS, result.getName() + " test is pass");
+			passCounter++;
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			test.log(LogStatus.SKIP, result.getName() + " test is skipped and skip reason is:-" + result.getThrowable());
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.ERROR, result.getName() + " test is failed" + result.getThrowable());
+			failCounter++;
 			String screen = captureScreen("");
 //			String screen =getScreenShot("");
 			test.log(LogStatus.FAIL, test.addScreenCapture(screen));

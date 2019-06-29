@@ -20,7 +20,7 @@ public class emailNotification {
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh");
         String  to[]={"anujtiwari05@gmail.com","ishan@babydestination.com","naved@babydestination.com","kartik@babydestination.com","tarun@babydestination.com","suppal@babydestination.com"};
 
-        String subject = "Automation Test Report | "+new Date();
+        String subject = "www.babydestination.com | "+new Date()+" | Atomation Test Report";
         String msg ="Hi All,\n\n" +
                 "" +
                 "Please find the Below Report of Automation Testing, To Open the report first download it on your laptop then click on the downloaded html file-: ";

@@ -14,17 +14,17 @@ import java.util.Properties;
 public class blogDetailPage extends TestBase {
     public static final Logger log = Logger.getLogger(blogDetailPage.class.getName());
 
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[1]/div[2]")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-home2/div/div[3]/div/div[1]/div/div[1]/div/div/app-swiper/swiper/div/div[1]/div[3]")
     WebElement blog1;
     @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div/div[2]/button")
     WebElement continueReading;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[2]/li")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[3]")
     WebElement related1;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[5]/li")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[3]/div[1]/div[2]/ul[4]")
     WebElement related2;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[1]/app-breadcrumb/ul/li[3]/a/span/app-category-list/span")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[1]/app-breadcrumb/ul/li[3]")
     WebElement subCatBreadcrumb;
-    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[1]/app-breadcrumb/ul/li[2]/a/span/app-category-list/span")
+    @FindBy(xpath = "/html/body/app-root/div[1]/app-content/div/div[1]/app-breadcrumb/ul/li[2]")
     WebElement categoryBread;
     @FindBy(partialLinkText = "10 Food Recipes for 1 to 2 years old kids")
     WebElement exitLink;
@@ -107,6 +107,7 @@ public class blogDetailPage extends TestBase {
         related1.click();
         pause2();
         scroll("scroll(800,2800)");
+        pause1();
         waitForElement(driver,related2,60);
         related2.click();
         pause1();
